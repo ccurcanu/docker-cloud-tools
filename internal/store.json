@@ -7,7 +7,7 @@
     },
     "packer": {
         "github_repo": "hashicorp/packer",
-        "version": "v1.5.3",
+        "version": "v1.5.4",
         "template_key": "PACKER_VERSION",
         "remove_prefix": "v"
     },
@@ -23,7 +23,7 @@
     },
     "docker-cloud-tools": {
         "github_repo": "ccurcanu/docker-cloud-tools",
-        "version": "47",
+        "version": "48",
         "template_key": "DOCKERFILE_VERSION"
     }
 }
