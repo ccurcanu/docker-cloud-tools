@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL version="52"
+LABEL version="53"
 
 ENV color_prompt yes
 ENV SHELL /bin/bash
@@ -48,12 +48,12 @@ RUN curl -s https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_l
     rm -f terraform_0.12.24_linux_amd64.zip
 
 
-# Installing Latest Hashicorp Packer (v1.5.4)
+# Installing Latest Hashicorp Packer (v1.5.5)
 RUN cd /tmp \
-    && wget -q https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd64.zip \
-    && unzip packer_1.5.4_linux_amd64.zip \
+    && wget -q https://releases.hashicorp.com/packer/1.5.5/packer_1.5.5_linux_amd64.zip \
+    && unzip packer_1.5.5_linux_amd64.zip \
     && mv packer /usr/local/bin/ \
-    && rm -rf packer_1.5.4_linux_amd64.zip
+    && rm -rf packer_1.5.5_linux_amd64.zip
 
 
 ENV LC_ALL C.UTF-8
