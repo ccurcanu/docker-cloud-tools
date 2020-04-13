@@ -16,13 +16,14 @@ RUN apt-get install build-essential -y
 RUN apt-get install git subversion -y
 
 
-# Installing latest GO ({GO_VERSION})
-RUN cd /tmp && echo "{GO_VERSION}" > $HOME/.go_version &&  \
-    wget -q https://storage.googleapis.com/golang/getgo/installer_linux && \
-    chmod +x installer_linux && \
-    ./installer_linux && \
-    . /root/.bash_profile && \
-    rm /tmp/installer_linux
+# Installing latest stable Golang Go ({GO_VERSION})
+RUN cd /tmp &&  \
+    wget -q https://dl.google.com/go/{GO_VERSION}.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf {GO_VERSION}.linux-amd64.tar.gz && \
+    echo "PATH=$PATH:/usr/local/go/bin" >> /etc/environment && \
+    echo "GOBIN=$HOME/bin" >> /etc/environment && \
+    echo "GOPATH=$HOME/go" >> /etc/environment && \
+    rm {GO_VERSION}.linux-amd64.tar.gz
 
 
 # Installing & setting up Python3
