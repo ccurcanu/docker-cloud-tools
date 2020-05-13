@@ -1,13 +1,13 @@
 {
     "terraform": {
         "github_repo": "hashicorp/terraform",
-        "version": "v0.12.24",
+        "version": "v0.12.25",
         "template_key": "TERRAFORM_VERSION",
         "remove_prefix": "v"
     },
     "packer": {
         "github_repo": "hashicorp/packer",
-        "version": "v1.5.5",
+        "version": "v1.5.6",
         "template_key": "PACKER_VERSION",
         "remove_prefix": "v"
     },
@@ -23,7 +23,7 @@
     },
     "docker-cloud-tools": {
         "github_repo": "ccurcanu/docker-cloud-tools",
-        "version": "54",
+        "version": "55",
         "template_key": "DOCKERFILE_VERSION"
     }
 }

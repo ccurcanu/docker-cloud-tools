@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL version="54"
+LABEL version="55"
 
 ENV color_prompt yes
 ENV SHELL /bin/bash
@@ -43,18 +43,18 @@ RUN cd /tmp && \
     cd /tmp/ansible && python setup.py build install && rm -rf /tmp/ansible
 
 
-# Installing Latest Hashicorp Terraform (v0.12.24)
-RUN curl -s https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip > terraform_0.12.24_linux_amd64.zip && \
-    unzip terraform_0.12.24_linux_amd64.zip -d /bin && \
-    rm -f terraform_0.12.24_linux_amd64.zip
+# Installing Latest Hashicorp Terraform (v0.12.25)
+RUN curl -s https://releases.hashicorp.com/terraform/0.12.25/terraform_0.12.25_linux_amd64.zip > terraform_0.12.25_linux_amd64.zip && \
+    unzip terraform_0.12.25_linux_amd64.zip -d /bin && \
+    rm -f terraform_0.12.25_linux_amd64.zip
 
 
-# Installing Latest Hashicorp Packer (v1.5.5)
+# Installing Latest Hashicorp Packer (v1.5.6)
 RUN cd /tmp \
-    && wget -q https://releases.hashicorp.com/packer/1.5.5/packer_1.5.5_linux_amd64.zip \
-    && unzip packer_1.5.5_linux_amd64.zip \
+    && wget -q https://releases.hashicorp.com/packer/1.5.6/packer_1.5.6_linux_amd64.zip \
+    && unzip packer_1.5.6_linux_amd64.zip \
     && mv packer /usr/local/bin/ \
-    && rm -rf packer_1.5.5_linux_amd64.zip
+    && rm -rf packer_1.5.6_linux_amd64.zip
 
 
 ENV LC_ALL C.UTF-8
