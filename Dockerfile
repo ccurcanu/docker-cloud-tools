@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL version="55"
+LABEL version="56"
 
 ENV color_prompt yes
 ENV SHELL /bin/bash
@@ -16,14 +16,14 @@ RUN apt-get install build-essential -y
 RUN apt-get install git subversion -y
 
 
-# Installing latest stable Golang Go (go1.14.2)
+# Installing latest stable Golang Go (go1.14.3)
 RUN cd /tmp &&  \
-    wget -q https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go1.14.2.linux-amd64.tar.gz && \
+    wget -q https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.14.3.linux-amd64.tar.gz && \
     echo "PATH=$PATH:/usr/local/go/bin" >> /etc/environment && \
     echo "GOBIN=$HOME/bin" >> /etc/environment && \
     echo "GOPATH=$HOME/go" >> /etc/environment && \
-    rm go1.14.2.linux-amd64.tar.gz
+    rm go1.14.3.linux-amd64.tar.gz
 
 
 # Installing & setting up Python3
