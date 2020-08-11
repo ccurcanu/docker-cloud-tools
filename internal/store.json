@@ -18,12 +18,12 @@
     },
     "go": {
         "github_repo": "golang/go",
-        "version": "go1.14.7",
+        "version": "go1.15",
         "template_key": "GO_VERSION"
     },
     "docker-cloud-tools": {
         "github_repo": "ccurcanu/docker-cloud-tools",
-        "version": "66",
+        "version": "67",
         "template_key": "DOCKERFILE_VERSION"
     }
 }
