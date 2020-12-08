@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL version="85"
+LABEL version="86"
 
 ENV color_prompt yes
 ENV SHELL /bin/bash
@@ -43,10 +43,10 @@ RUN cd /tmp && \
     cd /tmp/ansible && python setup.py build install && rm -rf /tmp/ansible
 
 
-# Installing Latest Hashicorp Terraform (v0.14.1)
-RUN curl -s https://releases.hashicorp.com/terraform/0.14.1/terraform_0.14.1_linux_amd64.zip > terraform_0.14.1_linux_amd64.zip && \
-    unzip terraform_0.14.1_linux_amd64.zip -d /bin && \
-    rm -f terraform_0.14.1_linux_amd64.zip
+# Installing Latest Hashicorp Terraform (v0.14.2)
+RUN curl -s https://releases.hashicorp.com/terraform/0.14.2/terraform_0.14.2_linux_amd64.zip > terraform_0.14.2_linux_amd64.zip && \
+    unzip terraform_0.14.2_linux_amd64.zip -d /bin && \
+    rm -f terraform_0.14.2_linux_amd64.zip
 
 
 # Installing Latest Hashicorp Packer (v1.6.5)
