@@ -9,7 +9,7 @@ This repository contains a Dockerfile that will build a **Ubuntu Bionic** (18.04
 ## Software included
 
 Cloud tools and SDKs:
-* Terraform **(0.14.9)**
+* Terraform **(0.14.10)**
 * Packer **(1.7.2)**
 * Ansible **(v2.8.0)**
 * AWS [CLI](https://aws.amazon.com/cli/) and Python [SDK - boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
@@ -119,4 +119,4 @@ Based on those the following shell environment variables are exported automatica
 * TF_VAR_private_key_path (terraform **private_key_path** variable)
 * TF_VAR_region (terraform **region** variable)
 
-Dockerfile has version 103.
+Dockerfile has version 104.
