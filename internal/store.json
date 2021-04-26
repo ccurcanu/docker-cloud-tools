@@ -1,7 +1,7 @@
 {
     "terraform": {
         "github_repo": "hashicorp/terraform",
-        "version": "v0.15.0",
+        "version": "v0.15.1",
         "template_key": "TERRAFORM_VERSION",
         "remove_prefix": "v"
     },
@@ -23,7 +23,7 @@
     },
     "docker-cloud-tools": {
         "github_repo": "ccurcanu/docker-cloud-tools",
-        "version": "105",
+        "version": "106",
         "template_key": "DOCKERFILE_VERSION"
     }
 }
