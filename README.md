@@ -18,7 +18,7 @@ Cloud tools and SDKs:
 Development tools:
 * build-essential package containing gcc, g++, make **(latest in Bionic)**
 * Python **(v3.6)**
-* Go **(go1.16.3)**
+* Go **(go1.16.4)**
 * Git, Subversion and some editors like vim, nano, mcedit
 
 Environment:
@@ -119,4 +119,4 @@ Based on those the following shell environment variables are exported automatica
 * TF_VAR_private_key_path (terraform **private_key_path** variable)
 * TF_VAR_region (terraform **region** variable)
 
-Dockerfile has version 107.
+Dockerfile has version 108.
